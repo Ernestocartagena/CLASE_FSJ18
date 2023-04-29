@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>los platillos mas deliciosos</h1>
+    </header>
+    <nav>
+        <!--listas ordenadas <ol> y listas desordenadas <ul> 
+            
+            lista ordenada = gato, perro, gallina <ol>
+            1. gato
+            2. perro
+            3. gallina
+
+            lista desordenada = gato, perro, gallina <ul>
+            . gato
+            . perro
+            . gallina
+        -->
+        <ul>
+            <!--elementos de la lista <li> 
+                 PAGINA principal, platillos, ubicacion
+            -->
+            <li>
+                <!--hipervinvulos <a>: redireciiona a un enlace o archivo qie mandamos
+                    dentro de la etiqueta  <a> existe la propiedad href
+                    href = es la ruta donde vamos a redireccionar -->
+                    <a href="./index.html">Principal</a>
+            </li>
+            <li>
+                <a href="./platillos.html">Platillos</a>
+            </li>
+            <li>
+                <a href="#">Ubicacion</a>
+            </li>
+            </ul>
+    </nav>
+    <section>
+        <div>
+            <p>
+                <!-- esta etiqueta muestra en negrito un mensaje importante -->
+                <strong>Conoce nuestros mejores platillos</strong>
+            </p>
+            <!-- <ifrmae>: adjuntadr videos, imagenes, documentos, codigo-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vRu7yWotnws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
+            <!--
+                border: muestra el border de la tabla
+                cellpadding: es el espacio del contenido con la celda
+                cellspacing: es la forma como queremos que se vea el border (si demasiado plano o demasiado grueso)
+            -->
+            <table border="1" cellpadding="7" cellspacing="2">
+                <!-- encabezado -->
+                <thead>
+                    <!-- <th>: titulos -->
+                        <th>platillo</th>
+                        <th>descripcion</th>
+                        <th>precio</th>
+                </thead>
+                <!-- cuerpo -->
+                <tbody>
+                    <!-- <tr>: asigancion de filas-->
+                        <tr>
+                            <!-- <td>: asigancion de columnas -->
+                                <td>pollo en crema</td>
+                                <td>es una pechuga a la plancha banada en crema de hongos</td>
+                                <td>2.50$</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>: asigancion de columnas -->
+                                <td>carne asada</td>
+                                <td>es una carne con chimol, papas, aderezos</td>
+                                <td>3.75$</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>: asigancion de columnas -->
+                                <td>lasagna</td>
+                                <td>es una lasagna de carne, pollo o mixta</td>
+                                <td>3.00$</td>
+                        </tr>
+                </tbody>
+            </table>
+
+            <h3>seccion de bebidas</h3>
+            <table border="1" cellpadding="7" cellspacing="2">
+                <thead>
+                    <th>bebida</th>
+                    <th>marca</th>
+                    <th>precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>gaseosa</td>
+                        <td>coca cola</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>fresco natural</td>
+                        <td>horchata</td>
+                        <td rowspan="3">0.75</td>
+                    </tr>
+                    <tr>
+                        <td>licuado</td>
+                        <td>licuado de guineo</td>
+                    </tr>
+                    <tr>
+                        <td>fresco natural</td>
+                        <td>lemonade</td>
+                    </tr>
+                </tbody>
+                <!-- pie de pagina <tfoot> -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">El Sazon</td>
+                        </tr>
+                    </tfoot>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
