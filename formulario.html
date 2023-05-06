@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <header>
+    <h1>Recopilacion de datos</h1><br>
+    </header>
+        <section>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <caption>Forulario de Registro</caption>
+                <th colspan="4">Informacion del estudiante</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Nombre</td>
+                <td colspan="3"><input type="text" name="nombre"></td>
+            </tr>
+            <tr>
+                <td>Apellido</td>
+                <td colspan="3"><input type="text" name="apellido"></td>
+            </tr>
+            <tr>
+                <td>Curso</td>
+                <td colspan="3"><select name="curso" id="curso">
+                    <option value="curso de programacion">Curso de programacion</option>
+                    <option value="Curso de HTML">Curso de HTML</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Direccion</td>
+                <td colspan="3"><textarea name="Direccion" id="message" cols="20" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Telefono</td>
+                <td><input type="tel"></td>
+                <td>telefono alternativo</td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td>Genero</td>
+                <td colspan="3"><input type="radio" name="Genero"><span>Masculino</span><input type="radio" name="Genero"><span>Femenino</span></td>
+            </tr>
+            <tr>
+                <td>Correo Electronico</td>
+                <td colspan="3"><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Fecha de Ingreso</td>
+                <td><input type="date"></td>
+                <td>Hora</td>
+                <td><input type="time"></td>
+            </tr>
+            <tr>
+                <td>Foto del Estudiante</td>
+                <td colspan="3"><input type="file"></td>
+            </tr>
+            <tr>
+                <th colspan="4">Informacion del Familiar</th>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td colspan="3"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Apellido</td>
+                <td colspan="3"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Telefono</td>
+                <td><input type="tel"></td>
+                <td>Telefono de Trabajo</td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td>Genero</td>
+                <td colspan="3"><input type="radio" value="first_checkbox" name="Genero"><span>Masculino</span><input type="radio" value="first_checkbox" name="Genero"><span>Femenino</span></td>
+            </tr>
+            <tr>
+                <td>Correo Electronico</td>
+                <td colspan="3"><input type="email"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="checkbox">Acepto los terminos y condiciones</td>
+            </tr>
+            <tr>
+                <td colspan="4"><button type="submit">Registrar Datos</button></td>
+            </tr>
+         </tbody>
+        </table>
+    </section>
+</body>
+</html>
